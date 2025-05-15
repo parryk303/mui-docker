@@ -1,0 +1,27 @@
+{
+    "name": "mui-play",
+    "private": true,
+    "scripts": {
+        "dev": "cd client && vite",
+        "build": "cd client && npm install && npm run build",
+        "start": "concurrently \"npm run start:server\"",
+        "start:server": "cd server && node --loader ts-node/esm index.ts",
+        "start:client": "cd client && npm start"
+    },
+    "workspaces": [
+        "client",
+        "server"
+    ],
+    "dependencies": {
+        "express": "^4.21.2",
+        "luxon": "^3.6.1"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.1",
+        "@types/luxon": "^3.6.2",
+        "@types/node": "^22.14.1",
+        "concurrently": "^8.0.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3"
+    }
+}

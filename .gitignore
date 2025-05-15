@@ -1,0 +1,17 @@
+node_modules
+.idea/
+.vs_code/
+.serverless/
+build/
+package-lock.json
+yarn-error.log
+.vscode
+*.config
+./deploy.sh
+*.swp
+server-build
+cron-build
+.env
+.env.*
+Dockerfile
+src/server/database/index.js
